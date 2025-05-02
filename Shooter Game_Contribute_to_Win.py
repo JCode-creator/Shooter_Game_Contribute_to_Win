@@ -129,9 +129,12 @@ while run:
                 if num_fire >= 5 and rel_time == False:
                     last_time = timer()
                     rel_time = True
-                #else:
-                    #fire_sound.stop()
-                    #mixer.music.stop()
+            if e.key == K_m:
+                mixer_music.set_volume(0.0)
+                fire_sound.set_volume(0.0)
+            if e.key == K_u:
+                mixer_music.set_volume(100.0)
+                fire_sound.set_volume(100.0)
 
     if not finish:
 
