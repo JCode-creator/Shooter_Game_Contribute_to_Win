@@ -17,7 +17,7 @@ font2 = font.Font(None, 36)
 lost = 0
 score = 0
 max_lost = 3
-goal = 15
+goal = 10
 life = 3
 
 img_back = 'galaxy.jpg'
