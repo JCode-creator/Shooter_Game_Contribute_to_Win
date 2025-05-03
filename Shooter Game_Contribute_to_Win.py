@@ -107,6 +107,8 @@ run = True
 rel_time = False
 num_fire = 0
 
+winner = False
+
 while run:
     
     for e in event.get():
@@ -196,6 +198,7 @@ while run:
         if score >= goal:
             finish = True
             window.blit(win, (370, 200))
+            winner = True
 
         if life == 3:
             life_color = (0, 150, 0)
@@ -209,7 +212,7 @@ while run:
 
         display.update()
         #automatic restart of the game
-    else:
+    elif winner == False:
         finish = False
         score = 0
         lost = 0
